@@ -5,7 +5,20 @@
 }
 
 .estructura {
-  background-color: rgb(120, 171, 168);
+  background-image: linear-gradient(
+    to bottom,
+    #010305,
+    #172243,
+    #5e2a6d,
+    #b8066f,
+    #ff0043
+  );
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 h1 {
   text-align: center;
@@ -64,12 +77,16 @@ h3 {
   height: 250px;
   margin-right: 25px;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(63, 162, 246);
+  background-color: rgb(246, 251, 122);
 }
 .imagenes .petg {
   width: 350px;
   height: 250px;
   margin-right: 25px;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(63, 162, 246);
+  background-color: rgb(246, 251, 122);
 }
 
 .imagenes .abs {
@@ -77,6 +94,8 @@ h3 {
   height: 250px;
   margin-right: 25px;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(63, 162, 246);
+  background-color: rgb(246, 251, 122);
 }
 
 .imagenes .resina {
@@ -84,9 +103,13 @@ h3 {
   height: 250px;
   margin-right: 25px;
   border-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(63, 162, 246);
+  background-color: rgb(246, 251, 122);
 }
 
 #material-list {
+  display: flex;
+  justify-content: center;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -98,30 +121,112 @@ h3 {
 }
 
 .material-card {
-  background-color: rgb(238, 199, 89);
+  background-color: rgb(246, 251, 122);
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 600px;
+  max-width: 100%;
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style: normal;
-  color: ;
+  font-weight: 100;
 }
 
 .material-card span {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 5px;
 }
 
 .material-card .delete-button {
-  background-color: rgb(160, 21, 62);
+  background-color: rgb(63, 162, 246);
   color: white;
   border: none;
   padding: 5px 10px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#material-form {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#material-form h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+#material-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+#material-form input,
+#material-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#material-form input:focus,
+#material-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+#material-form button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#material-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#material-form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+#material-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }

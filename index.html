@@ -11,13 +11,44 @@
     <h2>Servicio de impresion</h2>
     <h3>Stock de Mercaderia</h3>
     <div class="imagenes">
-      <img src="./assets/pla.jpg" class="pla" alt="pla" />
-      <img src="./assets/petg.jpg" class="petg" alt="petg" />
-      <img src="./assets/abs.jpg" class="abs" alt="abs" />
-      <img src="./assets/resina.jpg" class="resina" alt="resina" />
+      <img src="./assets/pla.png" class="pla" alt="pla" />
+      <img src="./assets/petg.png" class="petg" alt="petg" />
+      <img src="./assets/abs.png" class="abs" alt="abs" />
+      <img src="./assets/resina.png" class="resina" alt="resina" />
     </div>
     <div class="container-btn-add">
-      <button id="btn-add">Agregar Material</button>
+      <form id="material-form">
+        <h2>Agregar Material</h2>
+        <label for="nombre">Nombre del Material:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ej. Resina"
+          required
+        />
+
+        <label for="cantidad">Cantidad:</label>
+        <input
+          type="number"
+          id="cantidad"
+          name="cantidad"
+          step="0.01"
+          placeholder="Cantidad en kg o ml"
+          required
+        />
+
+        <label for="temperatura">Temperatura Máxima de Uso:</label>
+        <input
+          type="text"
+          id="temperatura"
+          name="temperatura"
+          placeholder="Ej. 60°C"
+          required
+        />
+
+        <button type="submit">Agregar Material</button>
+      </form>
     </div>
 
     <ul id="material-list"></ul>
